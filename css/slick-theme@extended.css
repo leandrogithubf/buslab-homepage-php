@@ -1,0 +1,52 @@
+@charset 'UTF-8';
+
+/*******************************************
+	CUSTOM SLICK THEME
+	-------------------------------------
+	Customização do Slick.js por projeto
+*******************************************/
+.slick-dots-nav{
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    list-style: none;
+    display: block;
+}
+.slick-dots-nav li{
+	position: relative;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+    display: inline-block;
+}
+.slick-dots-nav li.slick-active > button{	
+	border-radius:  50%;
+	background-color: var(--base-color);
+}
+.slick-dots-nav li button{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border: 2px solid var(--base-color);
+    border-radius: 50%;
+    outline: none;
+    color: transparent;
+	font-size: 0;
+    line-height: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: block;
+}
+.slick-dotted.slick-slider{
+	margin-bottom: 0;
+}
+.hero-slider .slick-track,
+.banner-slider .slick-track{
+	margin: 0;
+	height: inherit;
+	min-height: 676px;
+}

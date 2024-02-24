@@ -1,0 +1,42 @@
+@charset 'UTF-8';
+
+/*===================
+	GOOGLE FONTS
+=====================
+	POPPINS
+	https://fonts.google.com/specimen/Poppins?preview.text_type=custom
+------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*---------------
+	AVERTA
+---------------*/
+@font-face {
+    font-family: 'averta-regular';
+    src: url('/fonts/averta/averta-regular-webfont.woff2') format('woff2'),
+         url('/fonts/averta/averta-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'averta-bold';
+    src: url('/fonts/averta/averta-extrabold-webfont.woff2') format('woff2'),
+         url('/fonts/averta/averta-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+When setting the primary font stack, apply it to the Pure grid units along
+with "html", "button", "input", "select", and "textarea". Pure Grids use
+specific font stacks to ensure the greatest OS/browser compatibility.
+*/
+html,
+button,
+input,
+select,
+textarea,
+span,
+.pure-g [class *= "pure-u"] {    
+    font-family: 'Poppins', sans-serif;
+}

@@ -1,0 +1,67 @@
+@charset 'UTF-8';
+
+/***********************************************
+	ARQUIVO DE EXTENSÃO DE COMPONENTES
+	-----------------------------------
+	Customize os componentes apenas
+	nesta folha de estilo.
+
+***********************************************/
+
+/*=============
+	CARD
+=============*/
+.card.md{
+	min-height: 298px !important;
+}
+
+/*============
+	ICONS
+=============*/
+.icon-social-sm{	
+	width: 14px;
+	height: 14px;	
+}
+.icon-flag-sm{
+	width: 22px;
+	height: 16px;
+}
+.icon-flag-sm.icon-in-blk{
+	margin-right: 4px;
+}
+.icon-advantage{
+	width: 57px;
+	height: 57px;
+}
+.icon-btn{
+	width: 64px;
+	height: 64px;
+}
+.icon-thin-advantage{
+	width: 28px;
+	height: 28px;
+}
+/*-----------------------
+	BANNER SLIDER
+		@hero slider
+-----------------------*/
+.hero-slider{
+	min-height: 722px;
+    background-image: var(--background-vertical-rectangles);
+    background-position: 90% 10px;
+    background-size: auto;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+}
+@media screen and (min-width:768px){
+	.hero-slider{
+		background-position: 100% 10px;
+    	background-size: auto;
+	}	
+}
+@media screen and (min-width:1600px){
+	.hero-slider{
+		background-position: 75% 10px;
+    	background-size: auto;
+	}	
+}

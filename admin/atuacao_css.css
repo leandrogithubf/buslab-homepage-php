@@ -1,0 +1,29 @@
+.banner{
+    width: 100%;
+}
+#updloadImagem{
+    width: 50%;
+}
+
+.box_sel_d{
+    width: 60%;
+} 
+
+.maoir{
+	float: left;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.imagem{
+	margin-bottom: 30px;
+}
+
+.bannerDinamico{
+	float: left;
+	width: 100%;
+	border-top: 1px solid #e2e4e7;
+	border-bottom: 1px solid #e2e4e7;
+	padding: 20px 0 10px 0;
+	margin-bottom: 20px;
+}

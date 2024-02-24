@@ -1,0 +1,79 @@
+@charset 'UTF-8';
+
+/*==========================
+	HERO SLIDER ANIMATION
+==========================*/
+.animation-theyAllFloatDownHere{
+	animation-name: theyAllFloatDownHere;
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-fill-mode: none;
+}
+.animation-doYouWantABaloon{
+	animation-name: doYouWantABaloon;
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-fill-mode: none;
+}
+.animation-zoomOutIn{
+	animation-name: zoomOutIn;
+	animation-duration: 40s;
+	animation-timing-function: ease-out;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+}
+.animation-zoomInOut-panView{
+	animation-name: zoomInOut-panView;
+	animation-duration: 120s;
+	animation-timing-function: cubic-bezier(.54,.54,.95,.34);
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+}
+
+@keyframes theyAllFloatDownHere { /* for hero slider only */
+	0% {
+		transform: translateX(-50%) translateY(-50%);
+	}
+	50%{
+		transform: translateX(-50%) translateY(calc(-49%));
+	}
+	100%{
+		transform: translateX(-50%) translateY(calc(-51%));
+	}
+}
+
+@keyframes doYouWantABaloon {
+	0% {
+		transform: translateY(-10px);
+	}
+	100%{
+		transform: translateY(10px);
+	}
+}
+
+@keyframes zoomOutIn{
+	0%{
+		transform: scale(2) translate(-100px, -50px);
+	}
+	100%{
+		transform: scale(1) translate(0,0);
+	}
+}
+
+@keyframes zoomInOut-panView{
+	0%{
+		transform: scale(1) translate(0,0);
+	}
+	50%{
+		transform: scale(1.5) translate(-100px,0);
+	}	
+	100%{
+		transform: scale(1) translate(0,0);
+	}
+}

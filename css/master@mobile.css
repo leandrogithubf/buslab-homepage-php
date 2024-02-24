@@ -1,0 +1,176 @@
+@charset 'UTF-8';
+
+@media screen and (max-device-width:1023px){	
+	/*===================
+		MOBILE CONTROL
+	===================*/
+	.only-mobile{
+		display: flex !important;
+	}
+	/*=================
+		PAGE HEADER
+	=================*/
+	.main-nav-mobile{
+		position: absolute;
+		top: 0;
+		left: auto;
+		right: 0;
+		width: 50%;
+		height: 100vh;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		letter-spacing: normal;
+		background-color: var(--white);
+		z-index: 9999;
+	}
+	.main-nav{
+		width: 100%;
+		height: fit-content;
+	}
+	.main-nav > ul{
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+}
+/*================
+	BANNER HERO
+================*/
+@media screen and
+(min-width:480px),
+(min-width:320px)
+{		
+	#hero-notebooks-floating.pos-abs.top-middle{
+		top: 84%;
+		left: 50%;
+		height: 312px;
+	}	
+}
+@media screen and (min-width:768px){
+	#hero-notebooks-floating.pos-abs.top-middle{
+		top: 69%;
+		left: 64%;
+		height: 440px;
+	}	
+}
+@media screen and (min-width:1024px){
+	#hero-notebooks-floating.pos-abs.top-middle{
+		top: 55%;
+		left: calc(50% + 10.5rem);
+		max-width: 1162px;
+		/* min-width: 100%; */
+		height: auto;
+	}	
+}
+@media screen and (min-width:1440px){
+	#hero-notebooks-floating.pos-abs.top-middle{
+		left: calc(55% + 10.5rem);
+	}
+}
+/*===================
+	BANNER SLIDER
+===================*/
+@media screen and (min-width:320px){
+	.notebook-cellphone-floating{
+		position: relative;
+		top: 30px;
+		left: -15%;
+		width: 354px;
+		display: block;
+	}
+}
+@media screen and (min-width:480px){
+	.notebook-cellphone-floating{		
+		left: -15%;
+		width: 554px;
+	}
+}
+@media screen and (min-width:35.5rem){
+	.notebook-cellphone-floating{		
+		left: -25%;
+		width: 654px;
+	}
+}
+@media screen and (min-width:768px){
+	.notebook-cellphone-floating{    	        
+        left: 0;
+        width: 742px;
+	}
+}
+@media screen and (min-width:1024px){
+	.notebook-cellphone-floating{
+    	position: absolute;
+        top: 10rem;
+        left: 70%;
+        width: 826px;
+	}
+}
+/* 
+	THREE NOTEBOOKS
+-----------------------*/
+@media screen and (min-width:320px){
+	#three-notebooks{
+		left: -50%;
+		width: 200%;
+		margin-top: var(--md);
+	}
+}
+@media screen and (min-width:480px){
+	#three-notebooks{
+		left: -25%;
+		width: 720px;
+	}
+}
+@media screen and (min-width:35.5rem){
+	#three-notebooks{
+		left: -31%;
+		width: 920px;		
+	}
+}
+@media screen and (min-width:768px){
+	#three-notebooks{
+		width: 100%;
+		left: initial;
+	}
+}
+/*===============
+	MODAL
+===============*/
+@media screen and (min-width:320px){
+	.modal{
+		transform: scale(.35);
+	}
+}
+@media screen and (min-width:480px){
+	.modal{
+		transform: scale(.5);
+	}
+}
+@media screen and (min-width:35.5rem){
+	.modal{
+		transform: scale(.6);
+	}
+}
+@media screen and (min-width:768px){
+	.modal{
+		transform: scale(.8);
+	}
+}
+@media screen and (min-width:1024px){
+	.modal{
+		transform: scale(1);
+	}
+}
+
+/*==================
+	FOOTER
+==================*/
+@media screen and (min-width:320px){
+	#footer-social{
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+	#footer-social .social-container{
+		margin-right: var(--md);
+	}
+};

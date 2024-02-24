@@ -1,0 +1,133 @@
+@charset 'UTF-8';
+
+:root{
+	--white: 							#FFFFFF;
+	--black: 							#000000;
+	--gray-100: 						#F5F5F5;
+	--gray-200: 						#EBEBEB;
+	--gray-300: 						#C5C6CB;
+	--gray-400: 						#707070;
+	--base-color: 						#141C5C;
+
+	--base-color-43: 					rgba(20,28,93,.43);
+	--black-50: 						rgba(0,0,0,.50);
+	--black-25: 						rgba(0,0,0,.25);
+	
+
+	--base-font: 						'Poppins', sans-serif;
+	--secondary-font: 					'averta-regular', sans-serif;
+	--secondary-font-bold: 				'averta-bold', sans-serif;	
+
+	--buslab: 							url('/images/BusLab.svg');
+
+	--icon-base-color-filter: 			contrast(0) brightness(0.05) sepia(100) hue-rotate(145deg) saturate(80);
+	--icon-hamburguer-menu: 			url('/images/icon-hamburguer-menu.svg');
+	--icon-filter:			 			url('/images/icon-filter.svg');
+	--icon-instagram:					url('/images/icon-social-instagram.svg');
+	--icon-facebook:					url('/images/icon-social-facebook.svg');
+	--icon-linkedin:					url('/images/icon-social-linkedin.svg');
+	--icon-whatsapp:					url('/images/icon-social-whatsapp.svg');
+	--icon-email:						url('/images/icon-social-envelope.svg');
+	--icon-phone:						url('/images/icon-phone.svg');
+	--icon-pin:							url('/images/icon-pin.svg');
+	--icon-attachment:					url('/images/icon-attachment.svg');
+	--icon-user-circle:					url('/images/icon-user-circle.svg');
+	--icon-comments:					url('/images/icon-comments.svg');
+	--icon-brasil:						url('/images/icon-flag-brasil.svg');
+	--icon-espanha:						url('/images/icon-flag-espanha.svg');
+	--icon-italia:						url('/images/icon-flag-italia.svg');
+	--icon-usa:							url('/images/icon-flag-usa.svg');
+	--icon-arrow:						url('/images/icon-arrow-down.svg');
+	--icon-arrow-corner-right:			url('/images/icon-arrow-corner-right.svg');
+	--icon-magnifier: 					url('/images/icon-magnifier.svg');
+	--icon-thin-customer: 				url('/images/icon-thin-customer.svg');
+	--icon-thin-head: 					url('/images/icon-thin-head.svg');
+	--icon-thin-relation: 				url('/images/icon-thin-relation.svg');--icon-circle-customer: 			url('/images/icon-circle-customer.svg');
+	--icon-circle-head: 				url('/images/icon-circle-head.svg');
+	--icon-circle-relation: 			url('/images/icon-circle-relation.svg');
+	--icon-circle-close: 				url('/images/icon-circle-close.svg');
+	--icon-circle-bold-arrow: 			url('/images/icon-circle-bold-arrow.svg');
+	--icon-circle-thin-arrow:  			url('/images/icon-circle-thin-arrow.svg');
+	--icon-circle-checked: 				url('/images/icon-circle-checked.svg');
+	--icon-circle-whatsapp: 			url('/images/icon-circle-whatsapp.svg');
+	--icon-circle-chat: 				url('/images/icon-circle-chat.svg');
+	--icon-square-checked: 				url('/images/icon-square-checked.svg');
+
+	--btn-arrow-circle-fill: 			url('/images/btn-arrow-circle-fill.svg');
+
+	--background-vertical-rectangles: 	url('/images/background-illustration-vertical-rectangles.svg');
+	--background-notebook-frame: 		url('/images/notebook-slide-frame-specular.webp');
+
+	--cubic-bezier: 					cubic-bezier(0.86, 0, 0.07, 1);
+	--transition: 						all .25s var(--cubic-bezier);
+}
+
+/*=============
+	MOBILE
+=============*/
+@media screen and (min-width:320px){
+	:root{
+		--max-width: 					300px;
+
+		--sm: 						   	calc(.5rem/2);
+		--md:						    calc(1rem/2);
+		--md-plus: 						calc(var(--md)*2);
+		--lg: 						    calc(5rem/2);
+		--xl: 						    calc(10rem/2);
+	}
+}
+@media screen and
+(min-width:320px),
+(min-width:480px){
+	:root{
+		--font-small: 				   	0.8rem;
+		--font-small-plus: 			    1.25rem;
+		--font-medium:				    1.5rem;
+		--font-medium-plus: 			calc(3.1875rem/1.5);
+		--font-large:					calc(3.875rem/1.15);
+		--line-height: 					calc(3.125rem/1.75);		
+	}
+}
+@media screen and (min-width:480px){
+	:root{
+		--max-width: 					460px;
+
+		--sm: 						   	calc(.5rem/2);
+		--md:						    calc(1rem/2);
+		--lg: 						    calc(5rem/2);
+		--xl: 						    calc(10rem/2);
+	}
+}
+@media screen and (min-width:768px){
+	:root{
+		--max-width: 					748px;
+
+		--sm: 						   	calc(.5rem/1.5);
+		--md:						    calc(1rem/1.5);
+		--lg: 						    calc(5rem/1.5);
+		--xl: 						    calc(10rem/1.5);
+	}
+}
+@media screen and
+(min-width:768px),
+(min-width:1024px){
+	:root{
+		--font-small: 				   	0.8rem;
+		--font-small-plus: 			    1.25rem;
+		--font-medium:				    1.5rem;
+		--font-medium-plus: 		    3.1875rem;
+		--font-large:				    3.875rem;
+		--line-height: 				    3.125rem;
+
+	}
+}
+@media screen and (min-width:1024px){
+		:root{
+			--max-width: 					980px;
+
+			--sm: 						   	0.5rem;
+			--md:						    1rem;			
+			--lg: 						    5rem;
+			--xl: 						    10rem;
+		}
+}

@@ -1,0 +1,33 @@
+/*================
+	BOX MODE
+================*/
+.box-mode.-m-t-4{
+	margin-top: -4rem;
+}
+.box-mode.m-b-md--double{
+    margin-bottom: 2rem;
+}
+.box-mode.m-b-2{
+	margin-bottom: 2rem;
+}
+.box-mode.m-b-4{
+	margin-bottom: 4rem;
+}
+.box-mode.m-b-7{
+	margin-bottom: 7rem;
+}
+.box-mode.p-t-8{
+	padding-top: 8rem;
+}
+.box-mode.p-r-4_5{
+	padding-right: 4.5rem;
+}
+.box-mode.p-b-4{
+	padding-bottom: 4rem;
+}
+.box-mode.p-l-4_5{
+	padding-left: 4.5rem;
+}
+.box-mode.p-md--double{
+    padding: 2rem;
+}

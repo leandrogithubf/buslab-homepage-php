@@ -1,0 +1,26 @@
+agencia_red<?php
+
+   ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+//$host = "private-buslab-mysql-cluster-do-user-4378896-0.a.db.ondigitalocean.com";
+$host = "buslab-mysql-cluster-do-user-4378896-0.a.db.ondigitalocean.com";
+	$port = "25060";
+
+	$user = "site_master";
+	// $user = "site_master_old";
+	$password = "olz6dve8p993hqxh";
+	// $password = "y4ea39fy19llpot2";
+	// $password = "w988mb4t3vjh48fp";
+
+	//NOME DATABASE DO PROJETO
+	$database = "buslab_site";
+
+	$ENDERECO = 'https://'.$_SERVER['HTTP_HOST'].'/test/admin/';
+
+	$conexao = mysqli_connect($host, $user, $password, $database, $port) or exit(mysqli_connect_error());
+
+	mysqli_select_db($conexao, $database) || exit(mysqli_error($conexao));
+
+	defined('ENDERECO') || define('ENDERECO', $ENDERECO);

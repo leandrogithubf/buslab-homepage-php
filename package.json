@@ -1,0 +1,21 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "automatização de tarefas front-end",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss css/*.css --base --dir css/build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/agencia-red/buslab.git"
+  },
+  "author": "BlackHeart-frt",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/agencia-red/buslab#readme",
+  "devDependencies": {
+    "cssnano": "^5.0.4",
+    "postcss": "^8.3.0",
+    "postcss-cli": "^8.3.1"
+  }
+}

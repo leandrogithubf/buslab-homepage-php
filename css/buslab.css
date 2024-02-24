@@ -1,0 +1,116 @@
+@charset 'UTF-8';
+
+#buslab-mvv{
+	min-height: 502px;
+	overflow: visible;
+}
+#buslab-mvv > img{	
+	left: 0;
+	pointer-events: none;
+	z-index: -1;
+}
+#buslab-mvv > .nav{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	flex-wrap: nowrap;
+	align-items: center;
+	list-style: none;
+	display: flex;
+}
+#buslab-mvv > .nav > li{
+	margin: 0 calc(var(--sm)/2.5);
+	padding: 0;
+	display: inline-block;
+}
+#buslab-mvv > .nav > li:last-of-type{
+	margin-right: 0;
+}
+#buslab-mvv > .nav > li > .btn[data-view=true]:hover{
+	color: var(--white);
+	background-color: var(--base-color);
+	cursor: default;
+}
+#buslab-mvv .data{
+	position: relative;
+	top: 0;
+	margin-top: 2rem;
+	opacity: 1;
+	display: block;
+}
+#buslab-mvv  .data[data-content-view="false"]{
+	top: 250px;
+	opacity: 0;
+	display: none;
+}
+
+/*=============
+	MOBILE
+=============*/
+@media screen and (min-width:320px){	
+	#buslab-mvv > .nav{		
+		flex-direction: column;
+		justify-content: center;
+		order: 2;
+	}
+	#buslab-mvv > .content{
+		order: 3;
+	}
+}
+@media screen and (min-width:480px){
+	#pg-buslab-notebook-floating{
+		position: relative;
+		top: 0;
+		width: 100%;
+		order: 1;
+	}
+	#buslab-mvv{
+		position: relative;
+	}
+	#buslab-mvv::before{
+	    content: '';
+    	position: absolute;
+    	top: -70%;
+    	left: auto;
+    	right: -30%;
+    	width: 80%;
+    	height: 800px;
+    	border-radius: 0 0 0 80%;
+    	background-color: var(--gray-100);
+    	z-index: -1;
+	}
+	#buslab-mvv > .nav{		
+		flex-direction: row;
+		justify-content: center;
+	}
+}
+@media screen and (min-width:768px){
+	#pg-buslab-notebook-floating{
+		position: absolute;
+		top: 10vh;
+		width: 80%;
+		order: initial;
+	}
+	#buslab-mvv > .nav{
+		justify-content: flex-end;
+		order: initial;
+	}
+	#buslab-mvv > .content{
+		order: initial;
+	}
+}
+@media screen and (min-width:1024px){
+	#pg-buslab-notebook-floating{
+		position: absolute;
+		top: 0;
+		width: auto;
+		order: initial;
+	}
+	#buslab-mvv > .nav{
+		order: initial;
+	}
+	#buslab-mvv > .content{
+		order: initial;
+	}
+}
